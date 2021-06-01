@@ -21,7 +21,8 @@ body{
     flex-wrap: nowrap;
     height: 100%;
 }
-
+ 
+/* --- side bar --- */
 aside{
     
     vertical-align: top;
@@ -29,6 +30,8 @@ aside{
     width: 18%;
     overflow: auto;
     background-color: rgb(60, 3, 127);
+    position: relative;
+    z-index: 100;
 }
 
 #main-content{
@@ -39,8 +42,11 @@ aside{
     background-color: #f2f3f7;
 
 }
+
+/* --- side image --- */
 .img{
     text-align: center;
+    position: relative;
 }
 .personal-img{
     width: 60%;
@@ -49,6 +55,8 @@ aside{
     box-shadow: rgba(56, 41, 41, 0.2) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     
 }
+/* --- image animated border --- */
+
 
 .img-title{
     text-align: center;
@@ -65,9 +73,10 @@ aside{
     font-weight: 200;
 }
 
+/* --- sections menu --- */
 .content-sections{
     text-align: center;
-    color: #f2f3f7;
+    color: #eceff4;
     margin-top: 40px;
 }
 
@@ -75,7 +84,6 @@ aside{
     display: block;
     margin-top: 20px;
     font-weight: 200;
-    padding: 6px 0;
     width: 100%;
 }
 
@@ -85,6 +93,13 @@ aside{
     text-decoration: none;
     position: relative;
     width: 100%;
+    padding: 6px 0;
+}
+
+
+.content-sections ul li a:focus,
+.content-sections ul li a:hover{
+    background-color: #3c035a;
 }
 
 .content-sections ul li a::after{
@@ -101,8 +116,124 @@ aside{
 
 }
 
-.content-sections ul li a:hover::after{
+.content-sections ul li a:focus::after,
+.content-sections ul li a:hover::after
+{
     transform: scale(1);
-    
     background-color: #ff6600;
+}
+
+/* --- footer (rights) --- */
+footer .rights p {
+    color: #808186;
+    text-align: center;
+    font-weight: 200;
+    font-size: 100%;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    
+}
+
+footer .rights p span{
+    color:#ff6600;
+}
+
+/* ------------------------------------------------- START CONTENTS & END OF SIDE BAR ---------------------------------------------------------------- */
+
+/* ------------------------------------------------- Home section ---------------------------------------------------------------- */
+#main-content #home{
+    position: relative;
+    overflow:hidden;
+    height: 100vh;
+}
+
+
+#main-content #home .bg-img{
+    height: 100%;
+    background: url("bg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#main-content #home p{
+    display: block;
+    position: absolute;
+    z-index: 99;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 100px;
+    top: 30%;
+    left: 10%;
+    color:#3c035a;
+}
+
+
+#main-content #home .download-btn a{
+    color: #3c035a;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    border:2px solid #3c035a;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    transition: all 0.5s;
+}
+
+#main-content #home .download-btn a:hover{
+ color: #eceff4;
+ background-color: #3c035a;
+
+}
+
+/* ------------------------------------------------- Overview section ---------------------------------------------------------------- */
+
+#main-content #overview{
+    position: relative;
+    overflow:hidden;
+    height: 100vh;
+}
+
+#main-content #overview h2{
+    position: relative;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color:#3c035a;
+    margin: 50px 0 0 50px;
+}
+
+#main-content #overview p{
+    width: 90%;
+    margin: 30px 0 0 50px;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+#main-content #overview .overview-cards{
+    display: flex;
+    margin: 30px 0 0 50px;
+    width: 90%;
+    
+}
+
+#main-content #overview .overview-cards .graphic-card{
+    height: 150px;
+    border-bottom: 5px solid #ff6600;
+    padding: 20px;
+    background-color: #3c035a;
+    color: #f2f3f7;
+}
+
+#main-content #overview .overview-cards .graphic-card i{
+    font-size: 30px;
+    
+}
+
+#main-content #overview .overview-cards .graphic-card h3{
+    margin-top: 30px;
 }
