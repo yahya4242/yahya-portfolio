@@ -161,7 +161,7 @@ aside{
 }
 
 
-.content-sections ul li a:focus,
+
 .content-sections ul li a:hover{
     background-color: #3c035a;
 }
@@ -179,8 +179,23 @@ aside{
     
 
 }
+.content-sections ul li .active-menu{
+    background-color: #3c035a;
+}
+.content-sections ul li .active-menu::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top:110%;
+    left: 0;
+    background-color: #ff6600;
+    transform: scale(1);
+    
 
-.content-sections ul li a:focus::after,
+}
+
+
 .content-sections ul li a:hover::after
 {
     transform: scale(1);
@@ -1052,7 +1067,7 @@ margin-top:30px  ;
 #main-content #portfolio{
     position: relative;
     overflow:hidden;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
 }
 #main-content #portfolio h2{
@@ -1063,22 +1078,72 @@ margin-top:30px  ;
     color:rgb(60, 3, 127);
     margin: 50px 0 0 50px;
 }
+#main-content #portfolio .categories{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 0 0 50px;
+}
+
+#main-content #portfolio .categories button{
+    display: inline-block;
+    text-decoration: none;
+    color: #e3e3e6;
+    background-color: rgb(60, 3, 127);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 30px 0 0 0 ;
+}
 
 #main-content #portfolio .main-carousel{
     
     width: 90%;
-    height: 70%;
+    height: 660px;
     margin: 50px auto;
+}
+
+#main-content #portfolio .hidden{
+    display: none;
 }
 
 #main-content #portfolio .main-carousel .carousel-cell {
 
-width: 100%;
+    width: 100%;
 }
 #main-content #portfolio .main-carousel .carousel-cell img {
     display: block;
     max-height: 100%;
-width: 100%;
+    width: 100%;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- CONTACT section ---------------------------------------------------------------- */
+
+#main-content #contact{
+    position: relative;
+    overflow:hidden;
+    height: 100vh;
+    width: 100%;
+}

@@ -7,7 +7,6 @@
 
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -44,13 +43,13 @@
                 </div>
                 <nav class="content-sections">
                     <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#overview">OVERVIEW</a></li>
-                        <li><a href="#skills">SKILLS</a></li>
-                        <li><a href="#experience">EXPERIENCE</a></li>
-                        <li><a href="#education">EDUCATION</a></li>
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li class="menu-link"><a href="#home">HOME</a></li>
+                        <li class="menu-link"><a href="#overview">OVERVIEW</a></li>
+                        <li class="menu-link"><a href="#skills">SKILLS</a></li>
+                        <li class="menu-link"><a href="#experience">EXPERIENCE</a></li>
+                        <li class="menu-link"><a href="#education">EDUCATION</a></li>
+                        <li class="menu-link"><a href="#portfolio">PORTFOLIO</a></li>
+                        <li class="menu-link"><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
                 <footer>
@@ -67,7 +66,7 @@
 
         <section id="main-content">
 
-            <div id="home">
+            <div id="home" class="section">
                 <p class="animate__animated animate__backInLeft">Hi! <br> I'm Yahya</p>
                 <div class="download-btn">
                     <a class="animate__animated animate__backInUp" href="cv.pdf" download="cv"> DOWNLOAD MY CV <i class="fa fa-download"></i></a>
@@ -76,7 +75,7 @@
             </div>
 
 
-            <div id="overview">
+            <div id="overview" class="section">
                 <h2>Who Am I?</h2>
                 <p>I'm a talented and professional Graphic Designer and an upcoming Web Developer, <br>
                     I have long years of professional experience in various design fields such as online/offline adverising services, 
@@ -117,7 +116,7 @@
             </div>
 
 
-            <div id="skills">
+            <div id="skills" class="section">
                 <h2>My Skills</h2>
                 <div class="skills-bars">
                     <div class="left">
@@ -195,7 +194,7 @@
                 </div>
             </div>
 
-            <div id="experience">
+            <div id="experience" class="section">
                 <h2>My Experience</h2>
                 <div class="exp-wrap">
                     <div class="left-side">
@@ -237,7 +236,7 @@
                 </div>
             </div>
 
-            <div id="education">
+            <div id="education" class="section">
                 <h2>My Education</h2>
                 <div class="edu-wrap">
                     <div class="edu-left">
@@ -259,8 +258,16 @@
                 </div>
             </div>
 
-            <div id="portfolio">
+            <div id="portfolio" class="section">
                 <h2>Samples Of My Work</h2>
+                <div class="categories">
+                    <button class="logos category">LOGOS</button>
+                    <button class="illustrations category">ILLUSTRATIONS</button>
+                    <button class="stationeries category">STATIONERIES</button>
+                    <button class="packages category">PACKAGES</button>
+                    <button class="technical category">TECHNICAL</button>
+                </div>
+
 
                 <div class="main-carousel logo" data-flickity='{ "cellAlign": "left", "contain": true , "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true}'>
                     <div class="carousel-cell">
@@ -386,11 +393,186 @@
                 </div>
 
 
-                <div class="main-carousel lo" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true }'>
+                <div class="main-carousel illustration hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true }'>
                     <div class="carousel-cell">
-                        <img data-flickity-lazyload="portfolio-imgs/logos/lo10.jpg" alt="">
+                        <img data-flickity-lazyload="portfolio-imgs/illustrations/il1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/illustrations/il2.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/illustrations/il3.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/illustrations/il4.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/illustrations/il5.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/illustrations/il6.jpg" alt="portfolio image">
                     </div>
                 </div>
+                
+
+                <div class="main-carousel stationery hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true }'>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/bk1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/bk2.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/bc1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/bc2.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/bc3.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/bc4.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl2.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl3.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl4.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl5.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl6.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl7.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl8.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl9.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl10.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl11.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl12.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/fl13.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/br1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/br5.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/br2.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/br3.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/br4.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/br6.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/br7.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/cd.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/lh1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/stationery/lh2.jpg" alt="portfolio image">
+                    </div>
+                </div>
+
+                <div class="main-carousel package hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true }'>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/package/pa1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/package/pa4.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/package/pa5.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/package/pa2.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/package/pa3.jpg" alt="portfolio image">
+                    </div>
+                </div>
+
+                <div class="main-carousel technical hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true }'>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/wp1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/wp2.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/wp3.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/lc1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/lc2.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/lc3.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/lc4.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/lc5.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/in.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/in1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/in2.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/in3.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/out1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="carousel-cell">
+                        <img data-flickity-lazyload="portfolio-imgs/technical/out2.jpg" alt="portfolio image">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="contact" class="section">
+
             </div>
         </section>
     </div>
@@ -400,7 +582,7 @@
 
 
 
-
+    <script src="main.js"></script>
     <script src="flickity/flickity.pkgd.min.js"></script>
     
 </body>
