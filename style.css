@@ -1092,17 +1092,26 @@ margin-top:30px  ;
     text-decoration: none;
     color: #e3e3e6;
     background-color: rgb(60, 3, 127);
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius: 5px;
     font-size: 15px;
-    margin: 30px 0 0 0 ;
+    margin: 30px 15px 0 0 ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-#main-content #portfolio .categories button:hover,
-#main-content #portfolio .categories button:focus{
-    background-color: #ff6600;
-    color: rgb(60, 3, 127);
+#main-content #portfolio .categories button:hover
+{
+    background-color: #ff6600ce;
+    color: #e3e3e6;
     cursor: pointer;
+}
+#main-content #portfolio .categories .highlight{
+    background-color: #ff6600;
+    color: #e3e3e6;
+    cursor: pointer;
+    box-shadow: none;
+    border: 2px solid rgb(60, 3, 127);
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 1px 3px, rgba(0, 0, 0, 0.34) 0px 1px 2px;
 }
 
 #main-content #portfolio .main-carousel{
@@ -1110,11 +1119,21 @@ margin-top:30px  ;
     width: 90%;
     height: 660px;
     margin: 50px auto;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
 }
+@keyframes animation{
+    0% { opacity: 0; }
+  
+    100% {opacity: 1;}
+  }
 
 #main-content #portfolio .hidden{
     display: none;
 }
+
 
 #main-content #portfolio .main-carousel .carousel-cell {
 

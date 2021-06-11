@@ -88,17 +88,29 @@ const btnss = document.querySelectorAll(".category");
         const carouselss = document.querySelectorAll(".main-carousel");
         //function of when the targeted btn is clicked
         function clicked(e){
+
+                    //highlight the clicked tab/button and keep it highlighted
+                    var current = document.getElementsByClassName("highlight");
+                    current[0].className = current[0].className.replace(" highlight", "");
+                    this.className += " highlight";
+        
         //loop over the list of the carousels
         for(caro of carouselss){
             //check if the btn clicked is the one related to the carousel
             if (e.target.getAttribute("id")===caro.getAttribute("id")){
+                
                 //if it is the carousel for the clicked btn, then show it
                 caro.classList.remove("hidden");
                 //***IMPORTANT*** this is to fix the FLICKITY glitch that happens when changing the showed carousel according to the clicked btn */
                 window.dispatchEvent(new Event('resize'));
+                
             //if it's not the meant carousel, then just hide it
             } else {
-                caro.classList.add("hidden")
+                
+                caro.classList.add("hidden");
+                
+                
+                
                 };
             };
         };
