@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet"href="animate.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
@@ -87,7 +87,7 @@
                     So far, all my clients are happy and satisfied with my work, and I believe you should also consider making use of my assistance in reaching your business's goals.
                 </p>
                 <div class="overview-cards">
-                    <div class="animate__animated animate__zoomIn graphic-card card">
+                    <div class="animate__animated animate__zoomIn graphic-card card ">
                         <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
                         <h3>GRAPHIC DESIGN</h3>
                     </div>
@@ -199,21 +199,21 @@
                 <div class="exp-wrap">
                     <div class="left-side">
                         <div class="vert-line">
-                            <div class="animate__animated animate__backInUp freelancer-circle circle"><i class="fa fa-pencil pen"></i></div>
-                            <div class="animate__animated animate__backInUp dph-circle circle"><i class="fa fa-pencil pen"></i></div>
-                            <div class="animate__animated animate__backInUp advo-circle circle"><i class="fa fa-pencil pen"></i></div>
+                            <div class="animate__backInUp freelancer-circle circle animate__animated"><i class="fa fa-pencil pen"></i></div>
+                            <div class="animate__backInUp dph-circle circle animate__animated"><i class="fa fa-pencil pen"></i></div>
+                            <div class="animate__backInUp advo-circle circle animate__animated"><i class="fa fa-pencil pen"></i></div>
                             <div class="end-circle circle"></div>
                         </div>
                     </div>
                     <div class="right-side">
-                        <div class="animate__animated animate__bounceInRight freelance-sec sec">
+                        <div class="animate__bounceInRight freelance-sec sec animate__animated">
                             <h2>Front-End Web Developer</h2>
                             <span class="company">Freelancer</span>
                             <span class="date">May 2020 - Present</span>
                             <p class="work-exp">I'm an enthusiast web developer who always aspire to sharpen my knowledge and gain more knowledge everyday,
                                  I use HTML, CSS, Bootstrap and Javascript to build front-end websites and Landing pages. </p>
                         </div>
-                        <div class="animate__animated animate__bounceInRight dph-sec sec">
+                        <div class="animate__bounceInRight dph-sec sec animate__animated">
                             <h2>Senior Graphic Designer</h2>
                             <span class="company">Digital Product House (DPH)</span>
                             <span class="date">Mar 2019 - May 2021</span>
@@ -223,7 +223,7 @@
                                 *  Design and supervise the design team to create new concepts that match the client's expectations. <br>
                                 *  Prepare and supervise the production process including CNC operations like: Laser, Router & Plasma works. </p>
                         </div>
-                        <div class="animate__animated animate__bounceInRight advo-sec sec">
+                        <div class="animate__bounceInRight advo-sec sec animate__animated">
                             <h2>Graphic Designer</h2>
                             <span class="company">ADVO Print</span>
                             <span class="date">Sep 2015 - Oct 2018</span>
@@ -261,15 +261,15 @@
             <div id="portfolio" class="section">
                 <h2>Samples Of My Work</h2>
                 <div class="categories">
-                    <button class="logos category">LOGOS</button>
-                    <button class="illustrations category">ILLUSTRATIONS</button>
-                    <button class="stationeries category">STATIONERIES</button>
-                    <button class="packages category">PACKAGES</button>
-                    <button class="technical category">TECHNICAL</button>
+                    <button id="logos" class="logos category">LOGOS</button>
+                    <button id="illustrations" class="illustrations category">ILLUSTRATIONS</button>
+                    <button id="stationeries"  class="stationeries category">STATIONERIES</button>
+                    <button id="package" class="packages category">PACKAGES</button>
+                    <button id="technical" class="technical category">TECHNICAL</button>
                 </div>
 
 
-                <div class="main-carousel logo" data-flickity='{ "cellAlign": "left", "contain": true , "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true}'>
+                <div id="logos" class="main-carousel logo" data-flickity='{ "cellAlign": "left", "contain": true , "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true, "autoPlay": true, "wrapAround": true}'>
                     <div class="carousel-cell">
                         <img data-flickity-lazyload="portfolio-imgs/logos/lo1.jpg" alt="portfolio image">
                     </div>
@@ -393,7 +393,7 @@
                 </div>
 
 
-                <div class="main-carousel illustration hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true }'>
+                <div id="illustrations" class="main-carousel illustration hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true, "autoPlay": true, "wrapAround": true }'>
                     <div class="carousel-cell">
                         <img data-flickity-lazyload="portfolio-imgs/illustrations/il1.jpg" alt="portfolio image">
                     </div>
@@ -415,7 +415,7 @@
                 </div>
                 
 
-                <div class="main-carousel stationery hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true }'>
+                <div id="stationeries" class="main-carousel stationeries hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true, "autoPlay": true, "wrapAround": true }'>
                     <div class="carousel-cell">
                         <img data-flickity-lazyload="portfolio-imgs/stationery/bk1.jpg" alt="portfolio image">
                     </div>
@@ -505,7 +505,7 @@
                     </div>
                 </div>
 
-                <div class="main-carousel package hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true }'>
+                <div id="package" class="main-carousel package hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true, "autoPlay": true, "wrapAround": true }'>
                     <div class="carousel-cell">
                         <img data-flickity-lazyload="portfolio-imgs/package/pa1.jpg" alt="portfolio image">
                     </div>
@@ -523,7 +523,7 @@
                     </div>
                 </div>
 
-                <div class="main-carousel technical hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true }'>
+                <div id="technical" class="main-carousel technical hidden" data-flickity='{ "cellAlign": "left", "contain": true, "freeScroll": false , "imagesLoaded" : true, "lazyLoad": true, "autoPlay": true, "wrapAround": true }'>
                     <div class="carousel-cell">
                         <img data-flickity-lazyload="portfolio-imgs/technical/wp1.jpg" alt="portfolio image">
                     </div>
@@ -581,9 +581,9 @@
 
 
 
-
-    <script src="main.js"></script>
     <script src="flickity/flickity.pkgd.min.js"></script>
+    <script src="main.js"></script>
+    
     
 </body>
 </html>
