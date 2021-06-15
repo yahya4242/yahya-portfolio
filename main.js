@@ -116,3 +116,35 @@ const btnss = document.querySelectorAll(".category");
         };
     };
 
+
+
+
+    // ****shwo and hide side hamburger menu for mobile screens****
+    
+
+    const burgerBars = document.getElementById("burger-menu");
+    const burgerMenu = document.getElementById("side-menu");
+    const xBtn = document.getElementById("cancel");
+
+    burgerBars.addEventListener("click", clickMenu);
+    xBtn.addEventListener("click", hideMenu);
+
+
+
+    function clickMenu(e){
+        e.preventDefault();
+        burgerMenu.classList.remove("hide-side");
+    };
+
+    function hideMenu(e){
+        e.preventDefault();
+        burgerMenu.classList.add("hide-side");
+    };
+
+    document.body.addEventListener("click", hideOnOutsideClick, true);
+
+    function hideOnOutsideClick(e){
+        
+        if (burgerMenu !== e.target && !burgerMenu.contains(e.target) && e.target.id !== "burger-menu"){
+                burgerMenu.classList.add("hide-side");
+            };};
