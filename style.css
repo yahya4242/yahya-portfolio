@@ -2049,7 +2049,7 @@ h2{
 	width: 100vw;
 	height: 55px;
 	position: fixed;
-	z-index: 490;
+	z-index: 690;
 	top: 0;
 	left: 0;
 	background-color: rgb(60, 3, 127);
@@ -2058,7 +2058,7 @@ h2{
 .main-container #burger-menu {
 	position: fixed;
 	display: block;
-	z-index: 500;
+	z-index: 700;
 	font-size: 30px;
 	text-decoration: none;
 	color: #e3e3e6;
@@ -2315,81 +2315,106 @@ footer .rights p span {
 
 /* **** sections titles***** */
 h2{
-	margin-top: 50px!important;
+	margin-top: 60px!important;
 	font-size: 20px!important;
 }
 
 /* ****home**** */
 #main-content #home p {
-	font-size: 14vmin;
-	top: 25%;
+	font-size: 55px;
+	top: 28%;
 }
 
 #main-content #home .download-btn a {
-	font-size: 5.5vmin;
+	font-size: 20px;
 	font-weight: 500;
 	padding: 5px;
 	border-radius: 8px;
-	top: 50%;
+	top: 55%;
 }
 	
 /* ***** overview ****** */
 #main-content #overview{
-	width: 95%;
+	width: 100%;
 	overflow: hidden;
+}
+
+#main-content #overview h2{
+	margin-left: 15px;
 }
 
 #main-content #overview p{
 	font-size: 13px;
-	margin-top: 15px;
-	line-height: 1.5em;
+	margin-top: 10px;
+	line-height: 1.25em;
+	margin-left: 15px;
 }
+
+.mobile-del{
+	display: none;
+}
+
 #main-content #overview .overview-cards {
-	margin: 0 0 0 20px;
-	width: 96%;
+	margin: 10px auto;
+	width: 100%;
+	padding: 0 15px;
+	flex-direction: column;
+
 }
 
 #main-content #overview .overview-cards .card {
-	height: 80px;
-	padding: 8px;
-	margin-right: 0;
+	height: 50px;
+	width: 100%;
+	padding:0 2px 5px 2px;
+	margin: 5px auto;
 	box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 15px -9px;
-	border-bottom:4px solid #ff6600;
+	border-bottom:3px solid #ff6600;
+	border-radius: 5px;
+	
 }
 
 #main-content #overview .overview-cards .card i {
-	font-size: 13px;
+	font-size: 18px;
+	margin: 18px 10px;
+	display: inline-block;
+	
 }
 
 #main-content #overview .overview-cards .card h3 {
-	margin-top: 0;
-	font-size: 12px;
+	margin: 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+	display: inline-block;
 }
 
 #main-content #overview .hire-me-section {
-	border-left: 4px solid #ff6600;
-	margin: 0 0 20px 60px;
+	border-left: 3px solid #ff6600;
+	margin: 10px 0 20px 15px;
 	width: 100%;
 	
 }
 
 #main-content #overview .hire-me-section p {
 	text-align: left;
-	font-size: 1em;
-	margin-left: 25px;
+	font-size: 14px;
+	margin-left: 10px;
 	margin-right: 0;
 	width: 100%;
 }
 
 #main-content #overview .hire-me-section a {
-	font-size: 13px;
-	margin: 10px 0 0 25px;
+	font-size: 14px;
+	margin: 10px 0 0 10px;
 	padding: 4px;
 
 }
 	
 
 /* **** skills **** */
+#main-content #skills h2{
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
 
 #main-content #skills {
 	position: relative;
@@ -2401,51 +2426,59 @@ h2{
 
 #main-content #skills .skills-bars {
 	display: flex;
-	margin-top: 10px;
+	flex-direction: column;
+	margin-top: 0px;
+	padding: 0;
+
 }
 
 #main-content #skills .skills-bars .left,
 #main-content #skills .skills-bars .right {
 	flex: 1 1 auto;
-	width: 90%;
-	margin: auto;
+	width: 100%;
+	
 }
+#main-content #skills .skills-bars .skill{
+	width: 90%;
+}
+
+
 
 #main-content #skills .skills-bars .skill .name {
 	position: absolute;
-	left: 55px;
-	top: 15px;
-	font-size: 14px;
+	left: 15px;
+	top: 1px;
+	font-size: 15px;
 }
 
 #main-content #skills .skills-bars .skill .percentage{
-	top: 17px;
+	top: 5px;
 	font-size: 12px;
 }
 
 .photoshop .percentage{
-	left: 90%!important;
-}
-.illustrator .percentage{
-	left: 86%!important;
-}
-.indesign .percentage{
-	left: 64%!important;
-}
-.corel .percentage{
-	left: 77%!important;
-}
-.html .percentage{
-	left: 95%!important;
-}
-.css .percentage{
 	left: 82%!important;
 }
+.illustrator .percentage{
+	left: 77%!important;
+}
+.indesign .percentage{
+	left: 52%!important;
+}
+.corel .percentage{
+	left: 67%!important;
+}
+.html .percentage{
+	left: 87%!important;
+}
+.css .percentage{
+	left: 72%!important;
+}
 .js .percentage{
-	left: 56%!important;
+	left: 42%!important;
 }
 .bootstrap .percentage{
-	left: 95%!important;
+	left: 87%!important;
 }
 
 
@@ -2453,15 +2486,15 @@ h2{
 	display: inline-block;
 	position: relative;
 	height: 5px;
-	width: 90%;
+	width: 100%;
 	border-radius: 2.5px;
 	background-color: #b3b3b3;
-	margin: 40px 55px;
+	margin: 25px 15px;
 }
 
 #main-content #skills .skill-bg {
 	margin: 0 auto;
-	margin-top: 70px;
+	margin-top: 0px;
 	
 }
 	
@@ -2470,20 +2503,41 @@ h2{
 #main-content #experience{
 	height: fit-content;
 }
+
+#main-content #experience h2{
+	margin-left: 15px;
+}
+
 #main-content #experience .exp-wrap{
-	height: 650px;
-	margin-top: 20px;
+	height: 750px;
+	width: 90%;
+	padding: 0;
+	margin: 15px 22px;
 }
 #main-content #experience .exp-wrap .left-side{
-	margin-left: 10px;
+	margin-left: 0;
+	width: 5%;
+	height: 100%;
 	
 }
+
+#main-content #experience .exp-wrap .right-side{
+	position: relative;
+}
+
 #main-content #experience .exp-wrap .right-side .sec {
 	margin-bottom: 10px;
-	font-size: 13px;
-	padding: 8px;
-	margin-left: 5px;
+	margin-top: -5px;
+	font-size: 14px;
+	padding: 5px;
+	margin-left: 2px;
 	border-radius: 8px;
+	height: fit-content;
+line-height: 1.3em;
+font-weight: 300;
+position: absolute;
+right: 0;
+width: 96%;
 }
 #main-content #experience .exp-wrap .right-side .sec::before {
 	content: "";
@@ -2496,20 +2550,33 @@ h2{
 	border-right: 10px solid #e3e3e6;
 }
 
+#main-content #experience .exp-wrap .right-side .f-end-sec{
+top: 0;
+}
+#main-content #experience .exp-wrap .right-side .dph-sec{
+top: 24%;
+}
+#main-content #experience .exp-wrap .right-side .advo-sec{
+top: 65%;
+}
+
 #main-content #experience .exp-wrap .right-side .sec h2 {
 	font-size: 15px!important;	
 	margin-top: 0!important;
+	display: block;
 }
 
 #main-content #experience .exp-wrap .right-side .sec .company {
-	font-size: 12px!important;
+	font-size: 13px!important;
 	font-weight: 500;
-	margin: 0 10px;
+	margin: 5px 0;
+	
 }
 #main-content #experience .exp-wrap .right-side .sec .date {
 	font-size: 10px!important;
-	margin-top: 5px;
+	margin-top: 0;
 	color: #ff6600;
+	
 }
 
 /* ---- icons line left ---- */
@@ -2523,68 +2590,85 @@ h2{
 }
 
 #main-content #experience .exp-wrap .left-side .vert-line .freelancer-circle {
-	width: 40px;
-	height: 40px;
-	left: -17.5px;
+	width: 30px;
+	height: 30px;
+	left: -14px;
 	top: 0;
-	border: 4px solid rgb(60, 3, 127);
+	border: 3px solid rgb(60, 3, 127);
 }
 #main-content #experience .exp-wrap .left-side .vert-line .dph-circle {
-	width: 40px;
-	height: 40px;
-	left: -17.5px;
-	top: 33%;
-	border: 4px solid rgb(60, 3, 127);
+	width: 30px;
+	height: 30px;
+	left: -14px;
+	top: 24%;
+	border: 3px solid rgb(60, 3, 127);
 }
 #main-content #experience .exp-wrap .left-side .vert-line .advo-circle {
-	width: 40px;
-	height: 40px;
-	left: -17.5px;
-	top: 67%;
-	border: 4px solid rgb(60, 3, 127);
+	width: 30px;
+	height: 30px;
+	left: -14px;
+	top: 65%;
+	border: 3px solid rgb(60, 3, 127);
 }
 #main-content #experience .exp-wrap .left-side .vert-line .end-circle {
-	width: 40px;
-	height: 40px;
-	left: -17.5px;
-	border: 4px solid rgb(60, 3, 127);
+	width: 30px;
+	height: 30px;
+	left: -14px;
+	border: 3px solid rgb(60, 3, 127);
 }
 
 #main-content #experience .exp-wrap .left-side .vert-line .circle i {
-	font-size: 1.4em;
+	font-size: 15px;
+	top: 0;
 }
 /* **** education **** */
 #main-content #education{
 	height: fit-content;
 }
 
+#main-content #education h2{
+	margin-left: 15px;
+}
+
+#main-content #education .edu-wrap {
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+}
+
 #main-content #education .edu-wrap .edu-left{
-	height: 100%;
+	height: fit-content;
+	width: 100%;
+
 }
 #main-content #education .edu-wrap .edu-right {
-	margin-top: 50%;
+	margin: 0 auto;
+	width: 70%;
+	
 
 }
 #main-content #education .edu-wrap .edu-right img {
 	width: 100%;
 }
 #main-content #education .edu-wrap {
-	margin-top: 20px;
+	margin-top: 15px;
 	height: 90%;
 }
 #main-content #education .edu-wrap .edu-left .edu-card{
-	height: 85%;
+	height: fit-content;
+	padding: 10px;
+	margin: 0;
 }
 
 #main-content #education .edu-wrap .edu-left .edu-card h2 {
-	font-size: 15px!important;
+	font-size: 16px!important;
 	display: block;
 	margin-top: 0!important;
 }
 
 #main-content #education .edu-wrap .edu-left .edu-card .date {
-	font-size: 12px!important;
-	margin-bottom: 12px;
+	font-size: 13px!important;
+	margin-bottom: 10px;
 	float: left;
 	display: block;
 	width: 100%;
@@ -2599,28 +2683,49 @@ h2{
 #main-content #portfolio{
 	height: max-content;
 }
+
+#main-content #portfolio h2{
+	margin-left: 15px;
+	margin-bottom: 50px;
+}
 #main-content #portfolio .categories{
-	width: 90vw!important;
-	margin: 0 auto!important;
+	flex-direction: column;
+	width: 100%;
+	margin: 15px auto;
+	align-items: center;
 }
 #main-content #portfolio .categories button {
-	margin: 100px 10px 0 0;
-	width: 18%;
-	font-size:10px;
-	font-weight: 300;
+	margin: 10px 3px;
+	width: fit-content;
+	font-size:12px;
+	font-weight: 500;
 	text-align: center;
 	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 3px,
+		rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 #main-content #portfolio .main-carousel {
-	height: 250px;
+	height: 200px;
+	width: 100%;
 	margin: 50px auto;
+	margin-top: 10px;
 }
 
-#main-content #portfolio .categories {
-	width: 88%;
-	margin: 0 0 0 50px;
-}
+.flickity-page-dots .dot {
+    width: 6px!important;
+    height: 6px!important;
+    margin: 0 4px!important;
+  }
 
+  .flickity-page-dots {
+    padding-top: 5px!important;
+  }
+  .flickity-prev-next-button {
+    width: 28px!important;
+    height: 28px!important;
+  }
+  .flickity-prev-next-button.previous { left: 5px!important; }
+  .flickity-prev-next-button.next { right: 5px!important; }
 
 }
