@@ -134,11 +134,15 @@ const btnss = document.querySelectorAll(".category");
     function clickMenu(e){
         e.preventDefault();
         burgerMenu.classList.remove("hide-side");
+        // change the header's bg to diffrentiate it from the side menu when it is opened
+        document.getElementsByClassName("header-bg")[0].style.backgroundColor = "rgb(120, 25, 228)";
     };
 
     function hideMenu(e){
         e.preventDefault();
         burgerMenu.classList.add("hide-side");
+        // make the header's bg back to main color when side menu closed
+        document.getElementsByClassName("header-bg")[0].style.backgroundColor = "rgb(60, 3, 127)";
     };
 
     document.body.addEventListener("click", hideOnOutsideClick, true);
@@ -147,4 +151,39 @@ const btnss = document.querySelectorAll(".category");
         
         if (burgerMenu !== e.target && !burgerMenu.contains(e.target) && e.target.id !== "burger-menu"){
                 burgerMenu.classList.add("hide-side");
+                // change the header's bg to diffrentiate it from the side menu when it is opened
+                document.getElementsByClassName("header-bg")[0].style.backgroundColor = "rgb(60, 3, 127)";
             };};
+
+
+
+    
+
+     // ****show and hide social media links on the right side****
+
+     const socialMenu = document.getElementsByClassName("social-bar")[0];
+     const socialToggle = document.getElementsByClassName("social-toggler")[0];
+     const openAroow = document.getElementsByClassName("open")[0];
+     const closeArrow = document.getElementsByClassName("close")[0];
+
+
+     socialToggle.addEventListener("click", toggleSocial);
+
+     function toggleSocial(e){
+         e.preventDefault();
+
+         if(openAroow.style.display !== "none"){
+             socialMenu.style.right = "0";
+             openAroow.style.display = "none";
+             closeArrow.style.display = "inline-block";
+         }else{
+            socialMenu.style.right = "-45px";
+            openAroow.style.display = "inline-block";
+            closeArrow.style.display = "none";
+         };
+     };
+
+
+     // ****hire me btn , smooth scroll to contact section****
+
+     document.getElementsByClassName("hire-btn")[0].addEventListener("click", function(e){e.preventDefault(); document.getElementById("contact").scrollIntoView({behavior: 'smooth'})} );

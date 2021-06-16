@@ -22,6 +22,75 @@ body {
 	height: 100vh;
 }
 
+/* --- social media bar --- */
+
+.social-bar {
+	position: fixed;
+	top: 200px;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 9999;
+	transition: right 0.4s ease-in;
+  }
+  
+  /* Style the icon bar links */
+  .social-bar a {
+	display: block;
+	width:40px;
+	text-align: center;
+	padding: 10px;
+	transition: all 0.3s ease;
+	color: white;
+	font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .social-bar a:hover {
+	background-color: rgb(60, 3, 127);
+  }
+  
+  .whatsapp {
+	background: #128c7e;
+	color: white;
+  }
+  .linkedin {
+	background: #007bb5;
+	color: white;
+  }
+  .github {
+	background: #171515;
+	color: white;
+  }
+
+
+  .social-toggler {
+	position: fixed;
+	width: 40px;
+	
+	top: 300px;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 9999;
+  }
+  .social-toggler .toggler{
+	border-radius: 50% 0 0 50%;
+	display: block;
+	text-align: center;
+	padding: 5px 10px;
+	color: white;
+	font-size: 20px;
+	background: rgb(120, 25, 228);
+	color: white;
+  }
+
+  .social-toggler .open{
+	display: none;
+  }
+
 /* --- hamburger bars ---- */
 
 .main-container .header-bg{
@@ -885,7 +954,7 @@ footer .rights p span {
 #main-content #portfolio {
 	position: relative;
 	overflow: hidden;
-	height: 100%;
+	height: fit-content;
 	width: 100%;
 }
 #main-content #portfolio h2 {
@@ -941,7 +1010,7 @@ footer .rights p span {
 
 #main-content #portfolio .main-carousel {
 	width: 90%;
-	height: 65%;
+	height: 600px;
 	margin: 50px auto;
 	animation-name: animation;
 	animation-duration: 1s;
@@ -1137,7 +1206,7 @@ textarea.contact-form-input{
 	}
 	
 	#main-content #portfolio .main-carousel {
-		height: 60%;
+		height: 500px;
 		margin: 50px auto;
 	}
 	
@@ -1257,7 +1326,7 @@ footer .rights p {
 }
 
 #main-content #portfolio .main-carousel {
-	height: 50%;
+	height: 450px;
 	margin: 50px auto;
 }
 
@@ -1444,7 +1513,7 @@ footer .rights p {
 }
 
 #main-content #portfolio .main-carousel {
-	height: 40%;
+	height: 400px;
 	margin: 50px auto;
 }
 
@@ -1751,7 +1820,7 @@ h2{
 }
 
 #main-content #portfolio .main-carousel {
-	height: 40%;
+	height: 350px;
 	margin: 50px auto;
 }
 
@@ -2134,17 +2203,11 @@ h2{
 }
 
 /* **** portfolio **** */
-#main-content #portfolio{
-	height: max-content;
-}
-#main-content #portfolio .categories{
-	width: 90vw!important;
-	margin: 0 auto!important;
-}
+
 #main-content #portfolio .categories button {
 	margin: 100px 10px 0 0;
-	width: 18%;
-	font-size:10px;
+	
+	font-size:13px;
 	font-weight: 300;
 	text-align: center;
 	padding: 10px;
@@ -2157,7 +2220,7 @@ h2{
 
 #main-content #portfolio .categories {
 	width: fit-content;
-	margin: 0 0 0 50px;
+	margin: 0 auto;
 }
 
 
@@ -2179,6 +2242,7 @@ h2{
 	top: 0;
 	left: 0;
 	background-color: rgb(60, 3, 127);
+	transition: background-color 0.9s ease-in-out;
 }
 
 .main-container #burger-menu {
