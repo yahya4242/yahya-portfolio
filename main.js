@@ -24,7 +24,7 @@ const anchorList = document.querySelectorAll('.menu-link')
 // ****Add class 'active' to menu link when section near top of viewport****  AND ****animate elements when come into view****
 
 //apply the call back func that's built below when the intersection ratio is 70%
-const options = {threshold: 0.70};
+const options = {threshold: 0.60};
 // build the intersectionObserver and set the parameters as the callback func above and the defined options
 const observer = new IntersectionObserver(
     function (entries){
